@@ -1,0 +1,10 @@
+
+curl -X POST -H "Content-Type: application/json"  -d '{ "account": "acardosojmz", "password": "acardosojmz" }' http://localhost:3000/api/v1/users/login
+
+
+export TOKEN="..."
+
+curl  http://localhost:3000/api/v1/quotes
+
+curl -H 'Accept: application/json' -H "Authorization: Bearer ${TOKEN}" http://localhost:3000/api/v1/quotes/1
+
